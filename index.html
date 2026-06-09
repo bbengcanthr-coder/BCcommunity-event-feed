@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC community-event-feed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-section" class="container text-center">
+        <h1>BC community-event-feed</h1>
+        <p>เชื่อมต่อและอัปเดตอีเวนต์ในคอมมูนิตี้ของเรา</p>
+        <button id="btn-login-google" class="btn primary">เข้าสู่ระบบด้วย Google</button>
+    </div>
+
+    <div id="app-section" class="layout" style="display: none;">
+        <aside class="sidebar">
+            <h2>BC Feed</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">หน้าแรก</a></li>
+                    <li><a href="#">อีเวนต์ทั้งหมด</a></li>
+                    <li><a href="#">การแจ้งเตือน</a></li>
+                </ul>
+            </nav>
+            <button id="btn-logout" class="btn secondary">ออกจากระบบ</button>
+        </aside>
+
+        <main class="feed">
+            <div class="compose-box">
+                <textarea id="post-text" placeholder="มีอีเวนต์หรือเรื่องราวอะไรมาแชร์กันไหม?"></textarea>
+                <div class="compose-actions">
+                    <input type="file" id="post-image" accept="image/*">
+                    <button id="btn-post" class="btn primary">โพสต์</button>
+                </div>
+            </div>
+            
+            <div id="posts-container">
+                </div>
+        </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
